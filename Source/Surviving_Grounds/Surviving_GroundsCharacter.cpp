@@ -171,7 +171,7 @@ void ASurviving_GroundsCharacter::OnFire()
 	// try and play the sound if specified
 	if (FireSound != NULL)
 	{
-		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation(), 0.3f);
 	}
 
 	// try and play a firing animation if specified
